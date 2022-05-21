@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0 //EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhugong.dao.WorkerDao">
+    <sql id="WorkerField">
+        w.id as "id",
+        w.name as "name",
+        w.password as "password",
+        w.age as "age",
+        w.phonenum as "phonenum"
+    </sql>
+
+    <!--获取所有工人信息-->
+    <select id="findAll" resultType="com.zhugong.entity.Worker">
+        select <include refid="WorkerField"/> from worker as w
+    </select>
+</mapper>

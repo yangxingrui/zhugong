@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false">
+    <diskStore path="C:\TEMP" />
+    <defaultCache
+            eternal="true"
+            maxEntriesLocalHeap="0"
+            overflowToDisk="true"
+            diskPersistent="true"
+            timeToIdleSeconds="0"
+            timeToLiveSeconds="0"
+             />
+
+</ehcache>
