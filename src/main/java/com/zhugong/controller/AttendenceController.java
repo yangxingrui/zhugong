@@ -343,7 +343,7 @@ public class AttendenceController {
             return checkoutMap;
         }
         //System.out.println("*****************"+attendenceService.existinByout(id,checkout));
-        //正常签到+正常签退
+        //正常签到+正常签退=正常
         if(attendenceService.normaltimeByout(id,checkout)!=null&&attendenceService.normalouttime(projectid,checkout)!=null){
             attendenceService.checknormal(id,checkout,checkoutremark,projectid);
         }

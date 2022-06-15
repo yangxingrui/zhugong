@@ -18,9 +18,7 @@
 
     <!--设置扫描方案-->
     <mvc:annotation-driven/>
-    <mvc:resources mapping="/dist/css/**" location="/dist/css"/>
-    <mvc:resources mapping="/dist/fonts/**" location="/dist/fonts"/>
-    <mvc:resources mapping="/dist/js/**" location="/dist/js"/>
+
 
 
 

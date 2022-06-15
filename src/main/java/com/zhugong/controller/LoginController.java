@@ -65,6 +65,8 @@ public class LoginController {
             System.out.println("对用户[" + username + "]进行登录验证..验证未通过,未知账户");
             metaMap.put("status",500);
             metaMap.put("msg", "未知账户");
+            metaMap.put("username",username);
+            metaMap.put("password",password);
             loginMap.put("meta",metaMap);
             return loginMap;
         }catch(IncorrectCredentialsException ice){
